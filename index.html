@@ -15,28 +15,39 @@
         updates.
       </p>
       <img src="imgs/150x150.png" alt="Under Construction Image" />
-      <p>Last update was <strong id="time">00:00:00</strong> ago!</p>
-      <script>
-        let startTime = new Date().getTime();
-        let timerId = null;
-        let eventSource = new EventSource('update');
-
-        eventSource.onmessage = (event) => {
-          let currentTime = new Date().getTime();
-          let timeElapsed = currentTime - startTime;
-          let seconds = Math.floor(timeElapsed / 1000);
-          let minutes = Math.floor(seconds / 60);
-          let hours = Math.floor(minutes / 60);
-          seconds %= 60;
-          minutes %= 60;
-          let timeString = `${pad(hours)}:${pad(minutes)}:${pad(seconds)}`;
-          document.getElementById("time").innerHTML = timeString;
-        };
-
-        function pad(number) {
-          return (number < 10? "0" : "") + number;
+      <p>Last update was <strong id="time">time</strong> ago!</p>
+      <script src="JS/timeHandler.js"></script>
+      <!-- <script>
+        const timeElement = document.getElementById("time");
+        const startTime = new Date().getTime();
+      
+        function updateTime() {
+          const currentTime = new Date().getTime();
+          const timeElapsed = currentTime - startTime;
+          const days = Math.floor(timeElapsed / (1000 * 60 * 60 * 24));
+          const hours = Math.floor((timeElapsed % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+          const minutes = Math.floor((timeElapsed % (1000 * 60 * 60)) / 60000);
+          const seconds = Math.floor((timeElapsed % 60000) / 1000);
+      
+          let timeString = "";
+      
+          if (days > 0) {
+            timeString += `${days} days, `;
+          }
+          if (hours > 0) {
+            timeString += `${hours} hours, `;
+          }
+          if (minutes > 0) {
+            timeString += `${minutes} minutes and `;
+          }
+          timeString += `${seconds} seconds`;
+      
+          timeElement.textContent = timeString.trim();
         }
-      </script>
+      
+        updateTime();
+        setInterval(updateTime, 1000);
+      </script> -->
     </div>
   </body>
 </html>
