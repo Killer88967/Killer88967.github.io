@@ -1,6 +1,9 @@
+<<<<<<< HEAD
 // This is just me 
 
 
+=======
+>>>>>>> 1153e4f82a05094311073a2a7e450fb981be057c
 // Create a new IndexedDB database
 const request = indexedDB.open("myDatabase", 1);
 
@@ -29,4 +32,8 @@ request.onsuccess = (event) => {
 // Delete the database when the page is closed
 window.addEventListener("beforeunload", () => {
   indexedDB.deleteDatabase("myDatabase");
+<<<<<<< HEAD
 });
+=======
+});
+>>>>>>> 1153e4f82a05094311073a2a7e450fb981be057c
