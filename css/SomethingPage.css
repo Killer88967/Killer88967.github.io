@@ -79,3 +79,8 @@ body {
   text-decoration: none;
   cursor: pointer;
 }
+
+.text-style {
+  text-decoration: none;
+  color: aqua;
+}

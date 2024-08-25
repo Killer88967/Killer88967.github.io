@@ -1,22 +1,35 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Under Construction</title>
-    <!-- <link rel="icon" type="image/png" href="logo.png" /> -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!--[if lt IE 9
+      ]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script
+    ><![endif]-->
     <link rel="stylesheet" href="css/UnderConstruction.css" />
+    <script src="JS/script.js"></script>
+    <title>Coming Soon</title>
   </head>
-  <body>
-    <div id="test">
-      <h1>Under Construction</h1>
-      <p>
-        This site is currently under construction. Please check back soon for
-        updates.
-      </p>
-      <img src="imgs/150x150.png" alt="Under Construction Image" />
-      <!-- <p>Last update was <strong id="time">time</strong> ago!</p> -->
-      <script src="JS/timeHandler.js"></script>
+
+  <body class="prevent-select">
+    <div id="main">
+      <img src="imgs/logo.png" alt="Logo Image" draggable="false" />
+      <h1>Coming Soon</h1>
+      <h2>Our website is currently under construction.</h2>
+      <div id="progress">
+        <div id="fill">
+          <div id="barpercent">
+            <h3 id="percent">0%</h3>
+            <h3 id="error" style="display: none">
+              Error: Percent cannot exceed 100%
+            </h3>
+          </div>
+        </div>
+      </div>
     </div>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap"
+      rel="stylesheet"
+    />
   </body>
 </html>
