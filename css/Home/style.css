@@ -68,6 +68,7 @@ body {
 
 .close {
   color: #aaaaaa;
+  margin-top: -17px;
   float: right;
   font-size: 28px;
   font-weight: bold;
