@@ -2,9 +2,39 @@ h1 {
     text-align: center;
     font-family: sans-serif;
     font-size: xxx-large;
-    color: red; /* fallback color */
+    color: red;
     background: linear-gradient(to right, red, orange, yellow);
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+  }
+  
+  body {
+    margin: 0;
+    padding: 0;
+  }
+  
+  .container {
+    max-width: 800px;
+    margin: 40px auto;
+    text-align: center;
+  }
+  
+  .change-log {
+    text-align: left;
+  }
+  
+  .change-log ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .change-log li {
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+  }
+  
+  .change-log li:last-child {
+    border-bottom: none;
   }
