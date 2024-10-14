@@ -89,3 +89,9 @@ img {
   justify-content: center;
   animation: rotate infinite forwards;
 }
+
+@keyframes rotate {
+  from {
+    opacity: 1; /* REMAKE THIS LATER */
+  }
+}
