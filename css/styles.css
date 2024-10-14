@@ -87,4 +87,5 @@ img {
 
 #container {
   justify-content: center;
+  animation: rotate infinite forwards;
 }
