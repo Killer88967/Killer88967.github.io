@@ -84,3 +84,7 @@ img {
     width: 80%;
   }
 }
+
+#container {
+  justify-content: center;
+}
