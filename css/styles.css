@@ -85,13 +85,17 @@ img {
   }
 }
 
-#container {
-  justify-content: center;
-  animation: rotate infinite forwards;
+/* TESTING */
+
+.rotating-ball {
+  animation: spin 1.5s infinite linear;
 }
 
-@keyframes rotate {
+@keyframes spin {
   from {
-    opacity: 1; /* REMAKE THIS LATER */
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
   }
 }
