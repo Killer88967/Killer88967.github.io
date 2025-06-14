@@ -16,8 +16,27 @@ h3 {
   @apply text-lg font-semibold mt-4;
 }
 
-div>p>a {
+div > p > a {
   @apply text-indigo-100 transition underline hover:text-blue-300 duration-200;
+}
+
+.listText {
+  @apply text-lg text-gray-200 hover:text-white transition-colors duration-300 mb-2;
+}
+
+.btn {
+  @apply cursor-pointer;
+}
+
+body {
+  @apply cursor-default;
+}
+
+.preventSelect {
+  user-select: none;
+  -ms-user-select: none;
+  -moz-user-select: none;
+  -webkit-user-select: none;
 }
 
 .signature {
