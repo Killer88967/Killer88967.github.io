@@ -1,0 +1,37 @@
+@import "tailwindcss";
+
+h1 {
+  @apply text-center font-bold text-2xl sm:text-3xl lg:text-4xl text-white pb-4 border-b-4 border-[#0A617B] mb-8 shadow-lg bg-gradient-to-r from-[#15967E] to-[#0A617B] rounded-2xl p-4 sm:p-6 lg:p-8 relative;
+}
+
+h1.warning {
+  @apply mb-[60px] font-bold text-red-500 text-2xl border-b-2 border-black;
+}
+
+h2 {
+  @apply mt-8 text-center font-bold text-2xl sm:text-3xl lg:text-4xl text-white pb-4 border-b-4 border-[#0A617B] mb-8 shadow-lg bg-gradient-to-r from-[#15967E] to-[#0A617B] rounded-2xl p-4 sm:p-6 lg:p-8 relative;
+}
+
+h3 {
+  @apply text-lg font-semibold mt-4;
+}
+
+div>p>a {
+  @apply text-indigo-100 transition underline hover:text-blue-300 duration-200;
+}
+
+.signature {
+  font-family: "Alex Brush", cursive !important;
+  font-weight: 800 !important;
+  font-size: xx-large !important;
+  font-style: normal !important;
+}
+
+.line-input {
+  border: none;
+  border-bottom: 1px solid #000;
+  width: 100%;
+  outline: none;
+  padding: 2px 0;
+  font-size: 16px;
+}
